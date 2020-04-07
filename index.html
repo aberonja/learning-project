@@ -16,13 +16,43 @@
   <body>
     <main class="mainContainer">
       <nav>
-        <a href="#">Home</a>
-        <a href="#">Food</a>
-        <a href="#">Catering</a>
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle" />
+        <div class="title">
+          KOCA
+        </div>
+        <div class="menu">
+          <a href="#">Home</a>
+          <a href="#">Food</a>
+          <a href="#">Catering</a>
+          <a href="#">CONTACT US</a>
+        </div>
       </nav>
-      <section>
-        <h2>First section</h2>
-        <div>Add text and images</div>
+      <section class="section-one">
+        <div class="part-one">
+          <h1 class="big-title">
+            Food
+            <span class="redSpan">Hungry</span> delicious.
+          </h1>
+          <p>
+            In order to build a successful brand, every food selector business -
+            whether retail, wholesale, needs to make a connection with
+            customers.
+          </p>
+          <div style="display: flex; flex-direction: column;">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="email"
+              placeholder="Enter your email"
+            />
+            <button>JOIN THE WAITLIST</button>
+          </div>
+        </div>
+        <div class="part-two">
+          <img src="big-meal.png" alt="big meal" />
+        </div>
       </section>
       <section>
         <h2>Second section</h2>

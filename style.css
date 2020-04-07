@@ -128,7 +128,6 @@ button {
 
 @media only screen and (min-width: 769px) {
   .mainContainer {
-    width: 80%;
     padding: 0 3em;
   }
 
@@ -176,6 +175,12 @@ button {
 }
 
 @media only screen and (min-width: 992px) {
+  .mainContainer {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1368px) {
   .mainContainer {
     width: 60%;
   }

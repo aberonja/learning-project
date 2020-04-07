@@ -1,7 +1,7 @@
 body {
   min-height: 100%;
   background-color: #0e0e0e;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .mainContainer {
@@ -9,7 +9,211 @@ body {
   flex-direction: column;
   margin: 0 auto;
   justify-items: center;
-  width: 60%;
+  width: 100%;
+  position: relative;
   background-color: #ffffff;
-  height: 100vh;
+  font-size: 16px;
+  padding: 0 1em;
+}
+
+.head-meal-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0a0a0a;
+  font-size: 2.5em;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1em;
+  margin-bottom: 0.5em;
+}
+
+.second-line-title {
+  color: #fb184f;
+}
+
+.under-head-meal-section {
+  text-align: center;
+  font-size: 0.9em;
+}
+.about-you {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5%;
+}
+.vege-card {
+  background-color: white;
+  width: 27%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rotateimg180 {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.text-about-you {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  margin: 2em 0.5em;
+}
+.text {
+  font-size: 0.75em;
+  margin-top: 1em;
+}
+
+.meals {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 9%;
+}
+
+.refugees {
+  background-color: white;
+  width: 27%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: left;
+  margin-top: 3em;
+}
+
+.refugees-title {
+  color: #0a0a0a;
+  font-size: 2.5em;
+  text-align: left;
+  font-weight: bold;
+  line-height: 1em;
+  margin-left: 0.15em;
+}
+
+.second-line-refugee-title {
+  color: #fb184f;
+}
+
+.text-refugees {
+  font-size: 0.75em;
+  margin: 1.5em 0.5em 4em 0.5em;
+}
+.meal-image {
+  color: #0a0a0a;
+  justify-content: center;
+  align-items: left;
+  margin: 0em 0.5em;
+}
+
+.button-contact {
+  text-transform: uppercase;
+  font-size: 1em;
+  height: 2.8em;
+  width: 9em;
+  background-color: #fb184f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-left: 0.26em;
+}
+
+.meal-block {
+  background-color: white;
+  width: 27%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+}
+
+.price-with-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  margin: 1.5em 0.5em 0.5em 3.5em;
+}
+.price {
+  display: flex;
+  flex-direction: row;
+  font-size: 2em;
+  font-weight: bold;
+}
+.dolar {
+  font-size: 0.7em;
+}
+
+.recipe-title {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+}
+.recipe-text {
+  font-size: 0.75em;
+}
+
+@media only screen and (min-width: 992px) {
+  .mainContainer {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 1368px) {
+  .mainContainer {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about-you {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+  }
+
+  .meals {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 9%;
+    align-items: center;
+  }
+
+  .meal-block {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    background-color: white;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+  }
+  .vege-card {
+    background-color: white;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+  }
+  .refugees {
+    background-color: white;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: left;
+    margin-top: 1em;
+    margin-bottom: 3em;
+  }
 }

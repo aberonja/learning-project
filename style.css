@@ -6,7 +6,7 @@ body {
   user-select: none;
 }
 
-.mainContainer {
+.main-container {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -32,7 +32,7 @@ label {
   font-size: 1.625em;
   color: #e31c3a;
   cursor: pointer;
-  z-index: 10;
+  z-index: 2;
   margin-top: 0.75em;
   display: flex;
   background-color: #ffe6ee;
@@ -50,7 +50,7 @@ label {
 
 #toggle:checked ~ .menu {
   left: 0;
-  z-index: 5;
+  z-index: 1;
   transition: left 300ms ease-in-out;
 }
 
@@ -78,7 +78,7 @@ a:hover {
   margin-bottom: 0.2em;
 }
 
-.redSpan {
+.red-span {
   color: #e31c3a;
 }
 
@@ -133,7 +133,7 @@ img {
 }
 
 @media only screen and (min-width: 769px) {
-  .mainContainer {
+  .main-container {
     padding: 0 3em;
   }
 
@@ -186,13 +186,13 @@ img {
 }
 
 @media only screen and (min-width: 992px) {
-  .mainContainer {
+  .main-container {
     width: 80%;
   }
 }
 
 @media only screen and (min-width: 1368px) {
-  .mainContainer {
+  .main-container {
     width: 60%;
   }
 }

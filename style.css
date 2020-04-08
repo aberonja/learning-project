@@ -2,6 +2,8 @@ body {
   min-height: 100%;
   background-color: #0e0e0e;
   font-family: 'Roboto', sans-serif;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .mainContainer {
@@ -29,9 +31,8 @@ label {
   position: fixed;
   font-size: 1.625em;
   color: #e31c3a;
-  margin-right: 10px;
   cursor: pointer;
-  z-index: 100;
+  z-index: 10;
   margin-top: 0.75em;
   display: flex;
   background-color: #ffe6ee;
@@ -86,6 +87,11 @@ img {
   height: auto;
 }
 
+.input-button-field {
+  display: flex;
+  flex-direction: column;
+}
+
 .email {
   margin-top: 2em;
   border: 1px solid #e31c3a;
@@ -96,7 +102,7 @@ img {
   outline: none;
 }
 
-button {
+.button {
   margin: 1em 0;
   border: 1px solid #e31c3a;
   border-radius: 4px;
@@ -166,7 +172,7 @@ button {
     width: 100%;
   }
 
-  .section-one .part-one {
+  .part-one {
     margin-right: 1.3em;
     display: flex;
     flex-direction: column;

@@ -13,7 +13,6 @@ body {
   position: relative;
   background-color: #ffffff;
   font-size: 16px;
-  padding: 0 1em;
 }
 
 .menu {
@@ -23,18 +22,25 @@ body {
 nav {
   display: flex;
   align-items: center;
+  margin-bottom: 1em;
 }
 
 label {
+  position: fixed;
   font-size: 1.625em;
   color: #e31c3a;
   margin-right: 10px;
   cursor: pointer;
+  z-index: 100;
+  margin-top: 0.75em;
+  display: flex;
+  background-color: #ffe6ee;
+  width: 100%;
+  padding: 0 0.5em;
 }
 
 .title {
-  font-weight: bold;
-  font-size: 1.2em;
+  display: none;
 }
 
 #toggle {
@@ -47,29 +53,21 @@ label {
   transition: left 300ms ease-in-out;
 }
 
-#toggle:checked ~ .backdrop {
-  left: 0;
-  width: 100%;
-  height: 100px;
-  position: absolute;
-  background-color: aquamarine;
-  z-index: 4;
-  opacity: 50%;
-}
-
 a {
   text-decoration: none;
   font-weight: bold;
-  color: #0e0e0e;
+  color: #e31c3a;
 }
 
 a:hover {
-  background-color: grey;
+  background-color: #e31c3a;
   color: #ffffff;
 }
 
 .section-one {
   width: 100%;
+  margin-top: 2em;
+  padding: 0 1em;
 }
 
 .big-title {
@@ -113,15 +111,17 @@ button {
   .menu {
     flex-direction: column;
     width: 250px;
-    height: calc(100% - 40px);
-    position: absolute;
+    height: 100%;
+    position: fixed;
     left: -250px;
-    top: 40px;
-    background-color: aqua;
+    top: 0;
+    background-color: #ffe6ee;
     transition: left 300ms ease-in-out;
+    padding-top: 2.5em;
   }
+
   a {
-    padding: 10px;
+    padding: 10px 16px;
     font-size: 1.5em;
   }
 }
@@ -136,7 +136,6 @@ button {
     align-items: center;
     justify-content: space-between;
     padding: 20px 0px;
-    margin-bottom: 2em;
   }
 
   label {
@@ -152,6 +151,12 @@ button {
   a:last-child {
     background-color: #e31c3a;
     color: #ffffff;
+  }
+
+  .title {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2em;
   }
 
   .section-one {

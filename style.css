@@ -67,7 +67,7 @@ a:hover {
 .section-one {
   width: 100%;
   margin-top: 2em;
-  margin-bottom: 1em;
+  margin-bottom: 3em;
   padding: 0 1em;
 }
 
@@ -118,7 +118,6 @@ a:hover {
 
 .section-two {
   width: 100%;
-  margin-top: 2em;
   padding: 0 1em;
 }
 
@@ -174,7 +173,7 @@ a:hover {
 .meals {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1em;
+  margin-bottom: 3em;
 }
 
 .refugee-block {
@@ -191,7 +190,7 @@ a:hover {
 .refugees-title {
   color: #0a0a0a;
   font-size: 2.2em;
-  text-align: left;
+  text-align: center;
   line-height: 1em;
   margin-bottom: 1em;
 }
@@ -199,6 +198,7 @@ a:hover {
 .text-refugees {
   font-size: 0.75em;
   margin-bottom: 1em;
+  text-align: center;
 }
 
 .meal-block {
@@ -252,7 +252,7 @@ a:hover {
   align-items: center;
   background-color: #ffffff;
   width: 100%;
-  padding: 0em 1em 2em 1em;
+  padding: 0em 1em 3em 1em;
 }
 
 .city {
@@ -277,7 +277,7 @@ a:hover {
 }
 
 footer {
-  margin-bottom: 2em;
+  margin-bottom: 3em;
   display: flex;
   flex-direction: column;
   justify-content: center;

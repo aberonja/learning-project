@@ -69,6 +69,7 @@ a:hover {
   margin-top: 2em;
   margin-bottom: 3em;
   padding: 0 1em;
+  text-align: center;
 }
 
 .big-title {
@@ -88,6 +89,11 @@ a:hover {
   margin: 0 auto;
 }
 
+.paragraf-text {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
 .input-button-field {
   display: flex;
   flex-direction: column;
@@ -96,7 +102,7 @@ a:hover {
 }
 
 .email {
-  margin-top: 2em;
+  margin-bottom: 1em;
   border: 1px solid #e31c3a;
   border-radius: 4px;
   background-color: #ffe6ee;
@@ -106,7 +112,7 @@ a:hover {
 }
 
 .button {
-  margin: 1em 0;
+  margin-bottom: 1em;
   border: 1px solid #e31c3a;
   border-radius: 4px;
   background-color: #e31c3a;
@@ -119,34 +125,30 @@ a:hover {
 .section-two {
   width: 100%;
   padding: 0 1em;
+  margin-bottom: 3m;
 }
 
 .head-meal-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   margin-bottom: 0.5em;
-  font-weight: bolder;
   line-height: 1em;
   font-size: 2.2em;
-  color: #0a0a0a;
 }
 
 .under-head-meal-section {
   text-align: center;
   font-size: 0.9em;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 }
 
 .about-you {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 2em;
 }
 
 .vege-card {
-  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -162,7 +164,7 @@ a:hover {
   flex-direction: column;
   align-content: center;
   text-align: center;
-  margin: 2em 0em;
+  margin: 1em 0em;
 }
 
 .vege-text {
@@ -173,18 +175,12 @@ a:hover {
 .meals {
   display: flex;
   flex-direction: column;
-  margin-bottom: 3em;
 }
 
 .refugee-block {
   display: flex;
   flex-direction: column;
   margin-bottom: 2em;
-}
-
-.refugee-title-with-text {
-  display: flex;
-  flex-direction: column;
 }
 
 .refugees-title {
@@ -194,17 +190,15 @@ a:hover {
   line-height: 1em;
   margin-bottom: 1em;
 }
-
+/* 
 .text-refugees {
   font-size: 0.75em;
   margin-bottom: 1em;
   text-align: center;
-}
+} */
 
 .meal-block {
-  background-color: #ffffff;
   display: flex;
-  flex-direction: row;
   margin-bottom: 2em;
 }
 
@@ -225,7 +219,6 @@ a:hover {
 
 .price {
   display: flex;
-  flex-direction: row;
   font-size: 2em;
   font-weight: bold;
 }
@@ -280,8 +273,6 @@ footer {
   margin-bottom: 3em;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 0 1em;
 }
 
@@ -307,6 +298,10 @@ footer {
 @media only screen and (min-width: 769px) {
   .main-container {
     padding: 0 3em;
+  }
+
+  p {
+    text-align: start;
   }
 
   nav {
@@ -368,6 +363,9 @@ footer {
 
 @media only screen and (min-width: 1368px) {
   .main-container {
+    width: 60%;
+  }
+  .third-section {
     width: 60%;
   }
 }

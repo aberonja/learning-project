@@ -190,12 +190,6 @@ a:hover {
   line-height: 1em;
   margin-bottom: 1em;
 }
-/* 
-.text-refugees {
-  font-size: 0.75em;
-  margin-bottom: 1em;
-  text-align: center;
-} */
 
 .meal-block {
   display: flex;
@@ -300,6 +294,10 @@ footer {
     padding: 0 3em;
   }
 
+  .big-meal-photo {
+    width: 100%;
+  }
+
   p {
     text-align: start;
   }
@@ -337,6 +335,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    text-align: left;
   }
 
   .part-one {
@@ -350,6 +349,69 @@ footer {
     font-size: 4em;
     line-height: 1.1em;
   }
+
+  .paragraf-text {
+    text-align: left;
+  }
+
+  .about-you {
+    flex-direction: row;
+  }
+
+  .vege-text {
+    text-align: center;
+  }
+
+  .meals {
+    flex-direction: row;
+  }
+
+  .refugee-block {
+    flex-grow: 1;
+    width: 0;
+    padding-top: 3em;
+  }
+
+  .refugees-title {
+    text-align: left;
+  }
+  .button-margin {
+    margin-right: 8em;
+  }
+
+  .meal-block {
+    flex-grow: 1;
+    width: 0;
+    flex-direction: column;
+  }
+
+  .third-section {
+    flex-direction: row;
+    background-color: #ffffff;
+    padding: 0em 1em 3em 0em;
+  }
+
+  .meal-photo {
+    flex-grow: 1;
+    width: 0;
+  }
+
+  .city {
+    flex-direction: column;
+    flex-grow: 1;
+    width: 0;
+  }
+
+  .city-title {
+    text-align: left;
+  }
+
+  .text-city {
+    text-align: left;
+  }
+}
+.input-padding {
+  padding: 0em 8em;
 }
 
 @media only screen and (min-width: 992px) {

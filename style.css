@@ -154,8 +154,8 @@ a:hover {
   align-items: center;
 }
 
-.rotateimg180 {
-  transform: rotate(90deg);
+.flip-horizontal {
+  transform: scaleX(-1);
 }
 
 .title-about-you {
@@ -244,7 +244,7 @@ a:hover {
   align-items: center;
   background-color: #ffffff;
   width: 100%;
-  padding: 0em 1em 3em 1em;
+  padding: 0em 1em 3em;
 }
 
 .city {

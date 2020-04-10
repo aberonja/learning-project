@@ -126,7 +126,7 @@ a:hover {
 .section-two {
   width: 100%;
   padding: 0 1em;
-  margin-bottom: 3m;
+  margin-bottom: 3em;
 }
 
 .head-meal-section {
@@ -171,6 +171,7 @@ a:hover {
 .vege-text {
   font-size: 0.75em;
   margin-top: 1em;
+  text-align: center;
 }
 
 .left-align {
@@ -242,11 +243,10 @@ a:hover {
   font-size: 0.75em;
 }
 
-.third-section {
+.section-three {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  justify-items: center;
   align-items: center;
   background-color: #ffffff;
   width: 100%;
@@ -353,7 +353,7 @@ footer {
     margin-right: 1.3em;
     display: flex;
     flex-direction: column;
-    flex: 0 1 auto;
+    flex: 0 1 50%;
   }
 
   .big-title {
@@ -371,10 +371,6 @@ footer {
 
   .vege-card {
     margin: 0em 0.3em;
-  }
-
-  .vege-text {
-    text-align: center;
   }
 
   .meals {
@@ -404,7 +400,7 @@ footer {
     margin: 0em 0.3em;
   }
 
-  .third-section {
+  .section-three {
     flex-direction: row;
     padding: 0em 5em 3em 0em;
   }
@@ -438,7 +434,7 @@ footer {
   .main-container {
     width: 80%;
   }
-  .third-section {
+  .section-three {
     width: 80%;
   }
 }
@@ -447,7 +443,7 @@ footer {
   .main-container {
     width: 60%;
   }
-  .third-section {
+  .section-three {
     width: 60%;
   }
 }

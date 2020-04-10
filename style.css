@@ -92,6 +92,7 @@ a:hover {
 .paragraf-text {
   text-align: center;
   margin-bottom: 1em;
+  font-size: 0.75em;
 }
 
 .input-button-field {
@@ -172,6 +173,10 @@ a:hover {
   margin-top: 1em;
 }
 
+.left-align {
+  text-align: left;
+}
+
 .meals {
   display: flex;
   flex-direction: column;
@@ -183,11 +188,17 @@ a:hover {
   margin-bottom: 2em;
 }
 
-.refugees-title {
+.refugee-title {
   color: #0a0a0a;
   font-size: 2.2em;
   text-align: center;
   line-height: 1em;
+  margin-bottom: 1em;
+}
+
+.refugee-text {
+  font-size: 0.75em;
+  text-align: center;
   margin-bottom: 1em;
 }
 
@@ -208,7 +219,7 @@ a:hover {
   flex-direction: column;
   justify-content: left;
   align-items: left;
-  margin: 0em 2em 0em 2em;
+  margin: 0em 2em;
 }
 
 .price {
@@ -291,7 +302,7 @@ footer {
 
 @media only screen and (min-width: 769px) {
   .main-container {
-    padding: 0 3em;
+    padding: 0 5em;
   }
 
   .big-meal-photo {
@@ -342,7 +353,7 @@ footer {
     margin-right: 1.3em;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    flex: 0 1 auto;
   }
 
   .big-title {
@@ -358,6 +369,10 @@ footer {
     flex-direction: row;
   }
 
+  .vege-card {
+    margin: 0em 0.3em;
+  }
+
   .vege-text {
     text-align: center;
   }
@@ -367,28 +382,31 @@ footer {
   }
 
   .refugee-block {
-    flex-grow: 1;
-    width: 0;
+    flex: 1 0 33%;
     padding-top: 3em;
+    margin: 0em 0.3em;
   }
 
-  .refugees-title {
+  .refugee-title {
     text-align: left;
   }
-  .button-margin {
-    margin-right: 8em;
+
+  .refugee-text {
+    text-align: left;
+  }
+
+  .button-width {
+    width: fit-content;
   }
 
   .meal-block {
-    flex-grow: 1;
-    width: 0;
     flex-direction: column;
+    margin: 0em 0.3em;
   }
 
   .third-section {
     flex-direction: row;
-    background-color: #ffffff;
-    padding: 0em 1em 3em 0em;
+    padding: 0em 5em 3em 0em;
   }
 
   .meal-photo {
@@ -400,6 +418,7 @@ footer {
     flex-direction: column;
     flex-grow: 1;
     width: 0;
+    margin-left: 4em;
   }
 
   .city-title {
@@ -409,9 +428,10 @@ footer {
   .text-city {
     text-align: left;
   }
-}
-.input-padding {
-  padding: 0em 8em;
+
+  .input-padding {
+    padding: 0em 8em;
+  }
 }
 
 @media only screen and (min-width: 992px) {

@@ -103,7 +103,7 @@ a:hover {
 .email {
   margin-bottom: 1em;
   border: 1px solid #e31c3a;
-  border-radius: 4px;
+  border-radius: 0.25em;
   background-color: #ffe6ee;
   padding: 0.8em;
   color: #080808;
@@ -113,7 +113,7 @@ a:hover {
 .button {
   margin-bottom: 1em;
   border: 1px solid #e31c3a;
-  border-radius: 4px;
+  border-radius: 0.25em;
   background-color: #e31c3a;
   padding: 0.8em;
   color: #ffffff;
@@ -278,10 +278,10 @@ footer {
 @media only screen and (max-width: 768px) {
   .menu {
     flex-direction: column;
-    width: 250px;
+    width: 15.625em;
     height: 100%;
     position: fixed;
-    left: -250px;
+    left: -15.625em;
     top: 0;
     background-color: #ffe6ee;
     transition: left 300ms ease-in-out;
@@ -289,7 +289,7 @@ footer {
   }
 
   a {
-    padding: 10px 16px;
+    padding: 0.625em 1em;
     font-size: 1.5em;
   }
 }
@@ -311,7 +311,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0px;
+    padding: 1.25em 1em;
   }
 
   label {
@@ -319,9 +319,9 @@ footer {
   }
 
   a {
-    padding: 10px;
-    border-radius: 4px;
-    margin-left: 20px;
+    padding: 0.625em;
+    border-radius: 0.25em;
+    margin-left: 1.25em;
   }
 
   a:last-child {

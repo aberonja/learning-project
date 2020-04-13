@@ -54,6 +54,10 @@ label {
   transition: left 300ms ease-in-out;
 }
 
+p {
+  margin-bottom: 1em;
+}
+
 a {
   text-decoration: none;
   font-weight: bold;
@@ -68,7 +72,9 @@ a:hover {
 .section-one {
   width: 100%;
   margin-top: 2em;
+  margin-bottom: 3em;
   padding: 0 1em;
+  text-align: center;
 }
 
 .big-title {
@@ -82,20 +88,23 @@ a:hover {
   color: #e31c3a;
 }
 
-img {
-  width: 100%;
+.big-meal-photo {
+  width: 70%;
   height: auto;
+  margin: 0 auto;
 }
 
 .input-button-field {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .email {
-  margin-top: 2em;
+  margin-bottom: 1em;
   border: 1px solid #e31c3a;
-  border-radius: 4px;
+  border-radius: 0.25em;
   background-color: #ffe6ee;
   padding: 0.8em;
   color: #080808;
@@ -103,9 +112,9 @@ img {
 }
 
 .button {
-  margin: 1em 0;
+  margin-bottom: 1em;
   border: 1px solid #e31c3a;
-  border-radius: 4px;
+  border-radius: 0.25em;
   background-color: #e31c3a;
   padding: 0.8em;
   color: #ffffff;
@@ -113,13 +122,167 @@ img {
   cursor: pointer;
 }
 
+.section-two {
+  width: 100%;
+  padding: 0 1em;
+  margin-bottom: 3em;
+}
+
+.head-meal-section {
+  text-align: center;
+  margin-bottom: 0.5em;
+  line-height: 1em;
+  font-size: 2.2em;
+}
+
+.head-meal-text {
+  text-align: center;
+  font-size: 0.9em;
+  margin-bottom: 2em;
+}
+
+.about-you {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+
+.vege-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-horizontal {
+  transform: scaleX(-1);
+}
+
+.title-about-you {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  margin: 1em 0em;
+}
+
+.vege-text {
+  font-size: 0.75em;
+  margin-top: 1em;
+  text-align: center;
+}
+
+.meals {
+  display: flex;
+  flex-direction: column;
+}
+
+.refugee-block {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.refugee-title {
+  color: #0a0a0a;
+  font-size: 2.2em;
+  text-align: center;
+  line-height: 1em;
+  margin-bottom: 1em;
+}
+
+.refugee-text {
+  font-size: 0.75em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.meal-block {
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.meal-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-with-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  margin: 0em 2em;
+}
+
+.price {
+  display: flex;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.dolar {
+  font-size: 0.7em;
+}
+
+.recipe-title {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+}
+
+.recipe-text {
+  font-size: 0.75em;
+}
+
+.section-three {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 0em 1em 3em;
+}
+
+.city {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+}
+
+.city-title {
+  color: #0a0a0a;
+  font-size: 2.2em;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1em;
+}
+
+.text-city {
+  font-size: 0.75em;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+footer {
+  margin-bottom: 3em;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1em;
+}
+
 @media only screen and (max-width: 768px) {
   .menu {
     flex-direction: column;
-    width: 250px;
+    width: 15.625em;
     height: 100%;
     position: fixed;
-    left: -250px;
+    left: -15.625em;
     top: 0;
     background-color: #ffe6ee;
     transition: left 300ms ease-in-out;
@@ -127,21 +290,29 @@ img {
   }
 
   a {
-    padding: 10px 16px;
+    padding: 0.625em 1em;
     font-size: 1.5em;
   }
 }
 
 @media only screen and (min-width: 769px) {
   .main-container {
-    padding: 0 3em;
+    padding: 0 5em;
+  }
+
+  .big-meal-photo {
+    width: 100%;
+  }
+
+  p {
+    text-align: start;
   }
 
   nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0px;
+    padding: 1.25em 1em;
   }
 
   label {
@@ -149,9 +320,9 @@ img {
   }
 
   a {
-    padding: 10px;
-    border-radius: 4px;
-    margin-left: 20px;
+    padding: 0.625em;
+    border-radius: 0.25em;
+    margin-left: 1.25em;
   }
 
   a:last-child {
@@ -170,18 +341,71 @@ img {
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    text-align: left;
   }
 
   .part-one {
     margin-right: 1.3em;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    flex: 0 1 50%;
   }
 
   .big-title {
     font-size: 4em;
     line-height: 1.1em;
+  }
+
+  .about-you {
+    flex-direction: row;
+  }
+
+  .left-align {
+    text-align: left;
+  }
+
+  .vege-card {
+    margin: 0em 0.3em;
+  }
+
+  .meals {
+    flex-direction: row;
+  }
+
+  .refugee-block {
+    flex: 1 0 33%;
+    padding-top: 3em;
+    margin: 0em 0.3em;
+  }
+
+  .button-width {
+    width: fit-content;
+  }
+
+  .meal-block {
+    flex-direction: column;
+    margin: 0em 0.3em;
+  }
+
+  .section-three {
+    flex-direction: row;
+    padding: 0em 5em 3em 0em;
+  }
+
+  .meal-photo {
+    flex-grow: 1;
+    width: 0;
+  }
+
+  .city {
+    flex-direction: column;
+    flex-grow: 1;
+    width: 0;
+    margin-left: 4em;
+  }
+
+  .input-padding {
+    padding: 0em 8em;
   }
 }
 
@@ -189,10 +413,18 @@ img {
   .main-container {
     width: 80%;
   }
+
+  .section-three {
+    width: 80%;
+  }
 }
 
 @media only screen and (min-width: 1368px) {
   .main-container {
+    width: 60%;
+  }
+
+  .section-three {
     width: 60%;
   }
 }

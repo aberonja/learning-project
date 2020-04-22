@@ -144,14 +144,6 @@ let newArray2 = arr.map((e) => {
 });
 console.log(' (10) ', newArray2);
 
-function multArray(arr1) {
-  for (let i = 0; i < arr.length; i++) {
-    let newArr = [];
-    newArr = [arr[i] * 2];
-    return newArr;
-  }
-}
-console.log(multArray([1, 2, 3]));
 // assignement 11
 const object = [
   { Name: 'John', lastName: 'Doe', Age: 25, Capital: 'Novi Sad' },
@@ -205,8 +197,9 @@ console.log(' (15) ', reverseString(word));
 const word1 = 'abrakadabra';
 const reverseStringRecursion = (str) => {
   str === '' ? '' : reverseStringRecursion(str.substr(1)) + str.charAt(0);
+  return str;
 };
-console.log(' (16) ', reverseString(word1));
+console.log(' (16) ', reverseStringRecursion(word1));
 
 // assignement 17
 const minEvenNumb = (arr) => {
